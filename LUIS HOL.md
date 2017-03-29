@@ -180,50 +180,6 @@ Now that LUIS understands some basic intents and phrases, it's time to make the 
     ![Saving the phrase list](Images/luis-save-phraselist-info.png)
 
     _Saving the phrase list_ 
-
-1. Now that you have added an encyclopedia entity and phrase list, it is time to create a couple more intents to help LUIS understand whether a user wants to search news by using an encyclopedia entity such as "Super Bowl" or "World War," or using a more general category such as "Health" or "Politics." Begin by clicking **SearchNews** in the list of intents.
- 
-    ![Opening the SearchNews intent](Images/luis-select-searchnews.png)
-
-    _Opening the SearchNews intent_ 
-
-1. Click **+ Add Action**. Then click **+ Add Parameter**. Enter "Encyclopedia" as the parameter name and select **encyclopedia** in the drop-down list labeled "Type." Then click the **Save** button.
-
-    ![Adding an action](Images/luis-save-updated-intent-2.png)
-
-    _Adding an action_ 
-
-1. Click **+** to the right of "Intents" to add an intent.
- 
-    ![Adding another intent](Images/luis-click-new-intent-02.png)
-
-    _Adding another intent_ 
-
-1. Enter "SearchNewsByCategory" for the intent name and "Find Super Bowl news" as an example of a command that triggers the intent. Then click **+ Add Action**, followed by **+ Add Parameter**. Under "Action Parameters," check the **Required** box, enter "NewsCategory" as the parameter name, select **NewsCategory** for both **Type** and **Value**, and enter "Please specify a category" for the prompt. Then click the **Save** button.
-
-    ![Saving the intent](Images/luis-save-intent-info-02.png)
-
-    _Saving the intent_ 
- 
-1. Notice that the phrase "find super bowl news" is now displayed, with the term "super bowl" highlighted and "SearchNewsByCategory" selected as the intent. LUIS was smart enough to understand the term "super bowl" as an encyclopedia entry. Click the **Submit** button to add this entry to your model. 
-
-    ![Saving the utterance](Images/luis-submit-new-utterance-02.png)
-
-    _Saving the utterance_ 
-
-1. Type "Get Health news" into the new utterances box and click the **arrow**.
-
-    ![Adding an utterance](Images/luis-search-utterance-02.png)
-
-    _Adding an utterance_ 
-
-1.  Select **SearchNewsByCategory** from the drop-down list of intents. Click the word "health" and select **NewsCategory** to connect the two. Then click the **Submit** button.
- 
-    ![Saving the utterance](Images/luis-submit-new-utterance-03.png)
-
-    _Saving the utterance_ 
-
-1. Click **Train** in the lower-left corner of the page to train the model. 
  
 Your LUIS model has now been enhanced with a pre-built entity and a phrase list, and can understand most typical phrases relating to finding news based on various terms. Let's see how LUIS interprets this information and publish the model to make it available for use.
 
